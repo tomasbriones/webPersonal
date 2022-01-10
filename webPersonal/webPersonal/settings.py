@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'webPersonal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabasjijijijijieuser',
-        'PASSWORD': 'mypassword',
+        'NAME': 'webpersonal',
+        'USER': 'tbriones',
+        'PASSWORD': 'secreto',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
