@@ -15,15 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views
+from core import views as core
+from portfolio import views as portfolio
 
 from django.conf import settings
 
 urlpatterns = [
-    path('',views.home , name="home"),
-    path('about/',views.about , name="about"),
-    path('portfolio/',views.portfolio , name="portfolio"),
-    path('contact/',views.contact , name="contact"),
+    path('',core.home , name="home"),
+    path('about/',core.about , name="about"),
+    path('portfolio/',portfolio.portfolio , name="portfolio"),
+    path('contact/',core.contact , name="contact"),
     path('admin/', admin.site.urls),
 ]
 
